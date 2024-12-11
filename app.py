@@ -17,7 +17,8 @@ HTML_TEMPLATE = '''
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
+            background-color: #282c34;
+            color: #ffffff;
             margin: 0;
             padding: 0;
             display: flex;
@@ -26,24 +27,25 @@ HTML_TEMPLATE = '''
             height: 100vh;
         }
         .container {
-            background-color: #ffffff;
-            padding: 20px;
+            background-color: #333;
+            padding: 30px;
             border-radius: 10px;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
             max-width: 400px;
             width: 100%;
         }
         h1 {
             text-align: center;
-            color: #333;
+            color: #61dafb;
             margin-bottom: 20px;
         }
         label {
             display: block;
-            font-weight: bold;
             margin: 10px 0 5px;
+            font-weight: bold;
+            color: #61dafb;
         }
-        input, button {
+        input, select, button {
             width: 100%;
             padding: 10px;
             margin-bottom: 15px;
@@ -51,19 +53,31 @@ HTML_TEMPLATE = '''
             border-radius: 5px;
             font-size: 16px;
         }
+        input:focus, select:focus, button:focus {
+            outline: none;
+            border-color: #61dafb;
+            box-shadow: 0 0 5px rgba(97, 218, 251, 0.5);
+        }
         button {
-            background-color: #007bff;
-            color: #fff;
+            background-color: #61dafb;
+            color: #282c34;
+            font-weight: bold;
             border: none;
             cursor: pointer;
         }
         button:hover {
-            background-color: #0056b3;
+            background-color: #21a1f1;
         }
-        .info {
-            font-size: 12px;
-            color: #777;
-            margin-bottom: -10px;
+        .message {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+        .success {
+            color: #4caf50;
+        }
+        .error {
+            color: #f44336;
         }
     </style>
 </head>
