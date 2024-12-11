@@ -17,7 +17,7 @@ HTML_TEMPLATE = '''
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f0f8ff;
+            background-color: #f8f9fa;
             margin: 0;
             padding: 0;
             display: flex;
@@ -27,22 +27,21 @@ HTML_TEMPLATE = '''
         }
         .container {
             background-color: #ffffff;
-            padding: 30px;
+            padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-            max-width: 500px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
             width: 100%;
         }
         h1 {
             text-align: center;
-            color: #333333;
+            color: #333;
             margin-bottom: 20px;
         }
         label {
             display: block;
             font-weight: bold;
             margin: 10px 0 5px;
-            color: #333333;
         }
         input, button {
             width: 100%;
@@ -52,30 +51,14 @@ HTML_TEMPLATE = '''
             border-radius: 5px;
             font-size: 16px;
         }
-        input:focus, button:focus {
-            outline: none;
-            border-color: #007bff;
-            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
-        }
         button {
             background-color: #007bff;
-            color: #ffffff;
+            color: #fff;
             border: none;
             cursor: pointer;
-            font-weight: bold;
         }
         button:hover {
             background-color: #0056b3;
-        }
-        .message {
-            color: red;
-            font-size: 14px;
-            text-align: center;
-        }
-        .success {
-            color: green;
-            font-size: 14px;
-            text-align: center;
         }
         .info {
             font-size: 12px;
